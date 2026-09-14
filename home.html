@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Price Comparison | Israel Hardware Deals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --primary-hover: #004999;
+            --bg-color: #f4f7f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-muted: #666666;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto 25px auto;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        /* Store Badges */
+        .supported-stores {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .store-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        /* Category Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        /* Category Card / Button */
+        .category-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: var(--shadow);
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #eef2f5;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        /* Image Styling inside Cards */
+        .category-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .category-name {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .categories-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+            .category-card {
+                padding: 18px 10px;
+            }
+            .category-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Israeli Electronics Price Tracker</h1>
+        <p>Find the best deals on PC hardware, mobile devices, and peripherals. We aggregate and compare prices in real-time across top Israeli retailers to save you money.</p>
+        
+        <div class="supported-stores">
+            <span class="store-badge">TMS</span>
+            <span class="store-badge">KSP</span>
+            <span class="store-badge">Ivory</span>
+            <span class="store-badge">BUG</span>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="container">
+        <h2 class="section-title">Select a Category to Compare Prices</h2>
+
+        <div class="categories-grid">
+            
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="prebuilt.png" alt="Prebuilt PCs">
+                </div>
+                <div class="category-name">Prebuilt PCs</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="gpu.png" alt="Graphic Cards">
+                </div>
+                <div class="category-name">Graphic Cards</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="cpu.png" alt="CPUs">
+                </div>
+                <div class="category-name">CPUs</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="mb.png" alt="Motherboards">
+                </div>
+                <div class="category-name">Motherboards</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="ram.png" alt="Computer Memory">
+                </div>
+                <div class="category-name">Computer Memory (RAM)</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="ssd.png" alt="Computer Storage">
+                </div>
+                <div class="category-name">Computer Storage</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="cpucooler.png" alt="CPU Coolers">
+                </div>
+                <div class="category-name">CPU Coolers</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="case.png" alt="PC Cases">
+                </div>
+                <div class="category-name">PC Cases</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="fans.png" alt="Coolers and Fans">
+                </div>
+                <div class="category-name">Coolers & Fans</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="psu.png" alt="Power Supplies">
+                </div>
+                <div class="category-name">Power Supplies</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="phone.png" alt="Smartphones">
+                </div>
+                <div class="category-name">Samsung & Apple Smartphones</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="laptop.png" alt="Laptops">
+                </div>
+                <div class="category-name">Laptops</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="monitor.png" alt="PC Monitors">
+                </div>
+                <div class="category-name">PC Monitors</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="tv.png" alt="TVs">
+                </div>
+                <div class="category-name">TVs</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="keyboard.png" alt="PC Keyboards">
+                </div>
+                <div class="category-name">PC Keyboards</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="mouse.png" alt="PC Mice">
+                </div>
+                <div class="category-name">PC Mice</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="mousepad.png" alt="Mouse Pads">
+                </div>
+                <div class="category-name">Mouse Pads</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="headphones.png" alt="Headphones">
+                </div>
+                <div class="category-name">Headphones</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="speakers.png" alt="Speakers">
+                </div>
+                <div class="category-name">Speakers</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="cables.png" alt="Cables">
+                </div>
+                <div class="category-name">Cables</div>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <img src="extra.png" alt="Extra Peripherals">
+                </div>
+                <div class="category-name">Extra Peripherals</div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Electronics Price Comparison. All rights reserved.</p>
+        <p>All data refreshes every 24 hours at 4:30 PM JST.</p>
+        <p>Only current and future gen products are included</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPU Price Tracker</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 30px;
+      background-color: #1e293b;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      color: #38bdf8;
+      font-size: 1.8rem;
+    }
+
+    .layout-container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: calc(100vh - 75px);
+    }
+
+    .sidebar {
+      background-color: #1e293b;
+      border-right: 1px solid #334155;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: calc(100vh - 75px);
+      overflow-y: auto;
+    }
+
+    .sidebar-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #38bdf8;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 8px;
+    }
+
+    .filter-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .filter-label {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .range-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    input[type="text"], input[type="number"], select {
+      background-color: #0f172a;
+      border: 1px solid #334155;
+      color: #f8fafc;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      width: 100%;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #38bdf8;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 150px;
+      overflow-y: auto;
+      background-color: #0f172a;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: #f8fafc;
+      cursor: pointer;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      accent-color: #38bdf8;
+      cursor: pointer;
+    }
+
+    .content-area {
+      padding: 25px;
+    }
+
+    .top-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #gpu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .gpu-card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gpu-card:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+    }
+
+    .gpu-card-img-container {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+      background-color: #0f172a;
+      border-radius: 8px;
+      padding: 6px;
+    }
+
+    .gpu-card-img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .gpu-chip {
+      font-size: 0.8rem;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .gpu-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.3;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 8px;
+    }
+
+    .gpu-prices {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      background: #0f172a;
+      padding: 5px 8px;
+      border-radius: 6px;
+    }
+
+    .store-name { color: #94a3b8; font-weight: 600; }
+    .price-val { color: #4ade80; font-weight: 700; }
+
+    .store-link-btn {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #1e293b;
+      border: 1px solid #334155;
+      padding: 2px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .store-link-btn:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+      border-color: #38bdf8;
+    }
+
+    .click-hint {
+      font-size: 0.75rem;
+      color: #64748b;
+      text-align: center;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal {
+      background-color: #1e293b;
+      border: 1px solid #38bdf8;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 550px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #f8fafc; }
+
+    .modal-chip {
+      color: #38bdf8;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      color: #f8fafc;
+      margin-top: 4px;
+    }
+
+    .modal-section-title {
+      font-size: 0.9rem;
+      color: #38bdf8;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 4px;
+    }
+
+    .modal-specs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .modal-spec-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      background: #0f172a;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    .modal-spec-key { color: #94a3b8; text-transform: capitalize; }
+    .modal-spec-val { color: #f8fafc; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GPU Price Tracker</h1>
+  </header>
+
+  <div class="layout-container">
+    <aside class="sidebar">
+      <div class="sidebar-title">Filters</div>
+
+      <div class="filter-section">
+        <label class="filter-label" for="search-input">Search Model/Chip</label>
+        <input type="text" id="search-input" placeholder="e.g. ASUS, 5060...">
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label" for="store-filter">Store</label>
+        <select id="store-filter">
+          <option value="all">All Stores</option>
+          <option value="TMS">TMS</option>
+          <option value="IVORY">Ivory</option>
+          <option value="KSP">KSP</option>
+          <option value="BUG">BUG</option>
+        </select>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Chipset</label>
+        <div class="checkbox-group" id="chipset-filter-group"></div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Price (₪)</label>
+        <div class="range-group">
+          <input type="number" id="price-min" placeholder="Min">
+          <input type="number" id="price-max" placeholder="Max">
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Boost/OC Clock Speed (MHz)</label>
+        <div class="range-group">
+          <input type="number" id="clock-min" placeholder="Min">
+          <input type="number" id="clock-max" placeholder="Max">
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">CUDA Cores</label>
+        <div class="range-group">
+          <input type="number" id="cuda-min" placeholder="Min">
+          <input type="number" id="cuda-max" placeholder="Max">
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Length (mm)</label>
+        <div class="range-group">
+          <input type="number" id="length-min" placeholder="Min">
+          <input type="number" id="length-max" placeholder="Max">
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Width (mm)</label>
+        <div class="range-group">
+          <input type="number" id="width-min" placeholder="Min">
+          <input type="number" id="width-max" placeholder="Max">
+        </div>
+      </div>
+
+      <div id="dynamic-spec-filters"></div>
+    </aside>
+
+    <main class="content-area">
+      <div class="top-controls">
+        <div style="font-size: 0.9rem; color: #94a3b8;" id="gpu-count">Showing 0 cards</div>
+        <div style="font-size: 0.9rem; color: #94a3b8;">Data refreshes every 24 hours at 4:30 PM JST</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <label style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">Sort By:</label>
+          <select id="sort-select" style="width: auto;">
+            <option value="default">Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="gpu-container">Loading specs...</div>
+    </main>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div>
+        <div class="modal-chip" id="modal-chip">CHIP</div>
+        <div class="modal-title" id="modal-title">Model Name</div>
+      </div>
+      <div>
+        <div class="modal-section-title">Store Pricing</div>
+        <div class="gpu-prices" id="modal-prices"></div>
+      </div>
+      <div>
+        <div class="modal-section-title">Specifications</div>
+        <div class="modal-specs-list" id="modal-specs"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allGpus = [];
+    const rangeSpecKeys = ['clock', 'boost/clock', 'oc/boost clock', 'length', 'width', 'cuda', 'cuda cores', 'price', 'image'];
+
+    const brandNames = [
+      'asus', 'gigabyte', 'msi', 'palit', 'pny', 
+      'gainward', 'zotac', 'xfx', 'sapphire', 'powercolor', 
+      'asrock', 'galax', 'inno3d', 'evga'
+    ];
+
+    async function loadGPUSpecs() {
+      const container = document.getElementById('gpu-container');
+
+      try {
+        const response = await fetch('list.txt?t=' + Date.now());
+        if (!response.ok) throw new Error('Failed to load list.txt');
+
+        const rawText = await response.text();
+        allGpus = parseListText(rawText);
+
+        generateChipsetFilters(allGpus);
+        generateDynamicSpecFilters(allGpus);
+        applyFiltersAndRender();
+
+      } catch (err) {
+        container.innerHTML = '<p style="color:#f87171; text-align:center;">Error loading specs file.</p>';
+        console.error(err);
+      }
+    }
+
+    function parseListText(text) {
+      const lines = text.split('\n');
+      const gpus = [];
+      let currentChip = 'Unknown Chipset';
+      let currentModel = null;
+
+      lines.forEach(line => {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.toUpperCase() === 'GPUS:') return;
+
+        const isBrandModel = brandNames.some(brand => trimmed.toLowerCase().startsWith(brand));
+        const isHeader = (!line.includes(':') || (trimmed.endsWith(':') && !line.includes('http') && !/\d+₪|\d+\$|tms|ksp|ivory|bug|clock|length|width|cuda/i.test(trimmed)));
+
+        if (isHeader && !isBrandModel) {
+          currentChip = trimmed.replace(':', '').trim();
+          return;
+        }
+
+        if (trimmed.endsWith(':')) {
+          if (currentModel) gpus.push(currentModel);
+
+          currentModel = {
+            chip: currentChip,
+            name: trimmed.slice(0, -1).trim(),
+            stores: [],
+            links: {},
+            specs: {},
+            lowestPrice: Infinity
+          };
+          return;
+        }
+
+        if (currentModel) {
+          const colonIndex = line.indexOf(':');
+          if (colonIndex !== -1) {
+            const key = line.substring(0, colonIndex).trim().toLowerCase();
+            const value = line.substring(colonIndex + 1).trim();
+
+            if (key.endsWith('link')) {
+              const storeName = key.replace('link', '').trim().toUpperCase();
+              if (value !== 'x' && value !== '') {
+                currentModel.links[storeName] = value;
+              }
+              return;
+            }
+
+            if (['tms', 'ivory', 'ksp', 'bug'].includes(key)) {
+              if (value !== 'x' && value !== '') {
+                const numPrice = parseFloat(value.replace(/[^0-9.]/g, ''));
+                currentModel.stores.push({ store: key.toUpperCase(), price: value, numPrice: numPrice });
+                if (numPrice < currentModel.lowestPrice) {
+                  currentModel.lowestPrice = numPrice;
+                }
+              }
+              return;
+            }
+
+            currentModel.specs[key] = value;
+          }
+        }
+      });
+
+      if (currentModel) gpus.push(currentModel);
+      return gpus;
+    }
+
+    function generateChipsetFilters(gpus) {
+      const group = document.getElementById('chipset-filter-group');
+      group.innerHTML = '';
+
+      const chipsets = Array.from(new Set(gpus.map(gpu => gpu.chip).filter(c => c && c !== 'Unknown Chipset'))).sort();
+
+      if (chipsets.length === 0) {
+        group.innerHTML = '<span style="font-size:0.8rem; color:#64748b;">No chipsets found</span>';
+        return;
+      }
+
+      chipsets.forEach(chip => {
+        const item = document.createElement('label');
+        item.className = 'checkbox-item';
+        item.innerHTML = `
+          <input type="checkbox" value="${chip}" class="chipset-checkbox">
+          ${chip}
+        `;
+        group.appendChild(item);
+      });
+
+      document.querySelectorAll('.chipset-checkbox').forEach(cb => {
+        cb.addEventListener('change', applyFiltersAndRender);
+      });
+    }
+
+    function generateDynamicSpecFilters(gpus) {
+      const dynamicContainer = document.getElementById('dynamic-spec-filters');
+      dynamicContainer.innerHTML = '';
+
+      const specMap = {};
+
+      gpus.forEach(gpu => {
+        Object.entries(gpu.specs).forEach(([key, val]) => {
+          if (rangeSpecKeys.some(rk => key.includes(rk))) return;
+
+          if (!specMap[key]) specMap[key] = new Set();
+          specMap[key].add(val);
+        });
+      });
+
+      Object.entries(specMap).forEach(([specKey, values]) => {
+        const section = document.createElement('div');
+        section.className = 'filter-section';
+        section.style.marginTop = '12px';
+
+        const label = document.createElement('label');
+        label.className = 'filter-label';
+        label.innerText = specKey;
+
+        const group = document.createElement('div');
+        group.className = 'checkbox-group';
+
+        values.forEach(val => {
+          const item = document.createElement('label');
+          item.className = 'checkbox-item';
+          item.innerHTML = `
+            <input type="checkbox" data-spec-key="${specKey}" value="${val}" class="spec-checkbox">
+            ${val}
+          `;
+          group.appendChild(item);
+        });
+
+        section.appendChild(label);
+        section.appendChild(group);
+        dynamicContainer.appendChild(section);
+      });
+
+      document.querySelectorAll('.spec-checkbox').forEach(cb => {
+        cb.addEventListener('change', applyFiltersAndRender);
+      });
+    }
+
+    function extractNumeric(valStr) {
+      if (!valStr) return NaN;
+      const match = valStr.match(/[0-9.]+/);
+      return match ? parseFloat(match[0]) : NaN;
+    }
+
+    function applyFiltersAndRender() {
+      const searchValue = document.getElementById('search-input').value.toLowerCase();
+      const storeValue = document.getElementById('store-filter').value;
+      const sortValue = document.getElementById('sort-select').value;
+
+      const pMin = parseFloat(document.getElementById('price-min').value) || 0;
+      const pMax = parseFloat(document.getElementById('price-max').value) || Infinity;
+
+      const cMin = parseFloat(document.getElementById('clock-min').value) || 0;
+      const cMax = parseFloat(document.getElementById('clock-max').value) || Infinity;
+
+      const cudaMin = parseFloat(document.getElementById('cuda-min').value) || 0;
+      const cudaMax = parseFloat(document.getElementById('cuda-max').value) || Infinity;
+
+      const lenMin = parseFloat(document.getElementById('length-min').value) || 0;
+      const lenMax = parseFloat(document.getElementById('length-max').value) || Infinity;
+
+      const wMin = parseFloat(document.getElementById('width-min').value) || 0;
+      const wMax = parseFloat(document.getElementById('width-max').value) || Infinity;
+
+      const selectedChipsets = Array.from(document.querySelectorAll('.chipset-checkbox:checked')).map(cb => cb.value);
+
+      const activeCheckboxes = Array.from(document.querySelectorAll('.spec-checkbox:checked'));
+      const activeSpecFilters = {};
+      activeCheckboxes.forEach(cb => {
+        const key = cb.dataset.specKey;
+        if (!activeSpecFilters[key]) activeSpecFilters[key] = [];
+        activeSpecFilters[key].push(cb.value);
+      });
+
+      let filtered = allGpus.filter(gpu => {
+        const matchesSearch = gpu.name.toLowerCase().includes(searchValue) || gpu.chip.toLowerCase().includes(searchValue);
+        const matchesStore = storeValue === 'all' || gpu.stores.some(s => s.store === storeValue);
+        const matchesChipset = selectedChipsets.length === 0 || selectedChipsets.includes(gpu.chip);
+        const pricePass = gpu.lowestPrice >= pMin && gpu.lowestPrice <= pMax;
+
+        const clockVal = extractNumeric(gpu.specs['clock'] || gpu.specs['oc/boost clock']);
+        const clockPass = isNaN(clockVal) || (clockVal >= cMin && clockVal <= cMax);
+
+        const cudaVal = extractNumeric(gpu.specs['cuda'] || gpu.specs['cuda cores']);
+        const cudaPass = isNaN(cudaVal) || (cudaVal >= cudaMin && cudaVal <= cudaMax);
+
+        const lenVal = extractNumeric(gpu.specs['length']);
+        const lenPass = isNaN(lenVal) || (lenVal >= lenMin && lenVal <= lenMax);
+
+        const wVal = extractNumeric(gpu.specs['width']);
+        const wPass = isNaN(wVal) || (wVal >= wMin && wVal <= wMax);
+
+        const checkboxPass = Object.entries(activeSpecFilters).every(([key, allowedVals]) => {
+          return allowedVals.includes(gpu.specs[key]);
+        });
+
+        return matchesSearch && matchesStore && matchesChipset && pricePass && clockPass && cudaPass && lenPass && wPass && checkboxPass;
+      });
+
+      if (sortValue === 'price-asc') {
+        filtered.sort((a, b) => a.lowestPrice - b.lowestPrice);
+      } else if (sortValue === 'price-desc') {
+        filtered.sort((a, b) => (b.lowestPrice === Infinity ? 0 : b.lowestPrice) - (a.lowestPrice === Infinity ? 0 : a.lowestPrice));
+      } else if (sortValue === 'name-asc') {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+      }
+
+      renderGrid(filtered);
+    }
+
+    function renderGrid(gpus) {
+      const container = document.getElementById('gpu-container');
+      const countEl = document.getElementById('gpu-count');
+      container.innerHTML = '';
+      countEl.innerText = `Showing ${gpus.length} card${gpus.length === 1 ? '' : 's'}`;
+
+      if (gpus.length === 0) {
+        container.innerHTML = '<p style="grid-column: 1/-1; text-align:center; color:#94a3b8; padding: 40px;">No GPUs match the selected filter criteria.</p>';
+        return;
+      }
+
+      gpus.forEach(gpu => {
+        const card = document.createElement('div');
+        card.className = 'gpu-card';
+
+        const pricesHtml = gpu.stores.length > 0
+          ? gpu.stores.map(s => {
+              const link = gpu.links[s.store];
+              const linkBtn = link ? `<a href="${link}" target="_blank" class="store-link-btn" onclick="event.stopPropagation();">Buy ➔</a>` : '';
+              return `
+                <div class="price-row">
+                  <span class="store-name">${s.store}</span>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="price-val">₪${s.price}</span>
+                    ${linkBtn}
+                  </div>
+                </div>
+              `;
+            }).join('')
+          : '<div class="price-row"><span class="store-name">Status</span><span style="color:#ef4444;">Out of stock</span></div>';
+
+        const imgUrl = gpu.specs['image'];
+        const imgHtml = imgUrl 
+          ? `<div class="gpu-card-img-container"><img src="${imgUrl}" alt="${gpu.name}" class="gpu-card-img" onerror="this.parentElement.style.display='none';"></div>` 
+          : '';
+
+        card.innerHTML = `
+          <div>
+            <div class="gpu-chip">${gpu.chip}</div>
+            <div class="gpu-title">${gpu.name}</div>
+          </div>
+          ${imgHtml}
+          <div class="gpu-prices">
+            ${pricesHtml}
+          </div>
+          <div class="click-hint">Click to Inspect ➔</div>
+        `;
+
+        card.addEventListener('click', () => openModal(gpu));
+        container.appendChild(card);
+      });
+    }
+
+    function openModal(gpu) {
+      document.getElementById('modal-chip').innerText = gpu.chip;
+      document.getElementById('modal-title').innerText = gpu.name;
+
+      const pricesContainer = document.getElementById('modal-prices');
+      pricesContainer.innerHTML = gpu.stores.length > 0
+        ? gpu.stores.map(s => {
+            const link = gpu.links[s.store];
+            const linkBtn = link ? `<a href="${link}" target="_blank" class="store-link-btn" style="padding: 4px 10px; font-size: 0.85rem;">Visit Store ➔</a>` : '';
+            return `
+              <div class="price-row" style="padding: 8px 12px; font-size: 1rem;">
+                <span class="store-name">${s.store}</span>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="price-val">₪${s.price}</span>
+                  ${linkBtn}
+                </div>
+              </div>
+            `;
+          }).join('')
+        : '<div class="price-row"><span class="store-name">Status</span><span style="color:#ef4444;">Out of stock</span></div>';
+
+      const specsContainer = document.getElementById('modal-specs');
+      
+      let specsHtml = `
+        <div class="modal-spec-item">
+          <span class="modal-spec-key">Chipset</span>
+          <span class="modal-spec-val" style="color: #38bdf8;">${gpu.chip}</span>
+        </div>
+      `;
+
+      const specsEntries = Object.entries(gpu.specs).filter(([k]) => k !== 'image');
+      if (specsEntries.length > 0) {
+        specsHtml += specsEntries.map(([k, v]) => `
+          <div class="modal-spec-item">
+            <span class="modal-spec-key">${k}</span>
+            <span class="modal-spec-val">${v}</span>
+          </div>
+        `).join('');
+      }
+
+      specsContainer.innerHTML = specsHtml;
+      document.getElementById('overlay').classList.add('active');
+    }
+
+    document.getElementById('modal-close').addEventListener('click', () => {
+      document.getElementById('overlay').classList.remove('active');
+    });
+
+    document.getElementById('overlay').addEventListener('click', (e) => {
+      if (e.target.id === 'overlay') {
+        document.getElementById('overlay').classList.remove('active');
+      }
+    });
+
+    ['search-input', 'store-filter', 'sort-select', 'price-min', 'price-max', 'clock-min', 'clock-max', 'cuda-min', 'cuda-max', 'length-min', 'length-max', 'width-min', 'width-max'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', applyFiltersAndRender);
+        el.addEventListener('change', applyFiltersAndRender);
+      }
+    });
+
+    loadGPUSpecs();
+  </script>
+</body>
+</html>

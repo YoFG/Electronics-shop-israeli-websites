@@ -1,0 +1,2003 @@
+GPUS:
+    Nvidia RTX 5060:
+        ASUS DUAL black:
+            brand: ASUS
+            tms: 1940
+            ivory: 1950
+            ksp: 1690
+            fans: 2
+            boost/clock: 2535MHz
+            OC/boost clock:2565MHz
+            CUDA cores: 3840
+            length: 228mm
+            width: 123mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin 
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/asus-90yv0n12-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=133680
+            ksp link: https://ksp.co.il/web/item/391686
+            image: https://tms.co.il/image/catalog/products/90YV0N12-M0NA00/kUvVWL0F7m.jpg
+        ASUS DUAL white:
+            brand: ASUS
+            tms: 2146
+            ivory: 1990
+            ksp: 1599
+            fans: 2
+            boost/clock: 2535MHz
+            OC/boost clock: 2565MHz
+            CUDA cores: 3840
+            length: 228mm
+            width: 123mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/asus-90yv0n15-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=162718
+            ksp link: https://ksp.co.il/web/item/476178
+            image: https://tms.co.il/image/catalog/products/90YV0N15-M0NA00/tBF81AGS10.jpg
+        ASUS PRIME black:
+            brand: ASUS
+            tms: 1898
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2535MHz
+            OC/boost clock: 2565MHz
+            CUDA cores: 3840
+            length: 268mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/asus-90yv0n10-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0N10-M0NA00/vfaguvlztb.jpg
+        ASUS TUF Gaming:
+            brand: ASUS
+            tms: 2086
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2640MHz
+            OC/boost clock: 2677MHz
+            CUDA cores: 3840
+            length: 302mm
+            width: 134mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0n00-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0N00-M0NA00/Yd3rj4pWd6.jpg
+        Gigabyte EAGLE:
+            brand: Gigabyte
+            tms: 1940
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2520MHz
+            OC/boost clock: 2550MHz
+            CUDA cores: 3840
+            length: 208mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5060eagleoc8gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5060EAGLEOC8GD/ydiCToxOfs.jpg
+        Gigabyte WINDFORCE MAX:
+            brand: Gigabyte
+            tms: 1940
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2497MHz
+            OC/boost clock: 2512MHz
+            CUDA cores: 3840
+            length: 199mm
+            width: 116mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5060wf2maxocv28gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5060WF2MAXOCV28GD/4ml03DZHnr.jpg
+        Gigabyte EAGLE MAX:
+            brand: Gigabyte
+            tms: 2045
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2497MHz
+            OC/boost clock: 2550MHz
+            CUDA cores: 3840
+            length: 281mm
+            width: 115mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen:DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5060eaglemaxoc8gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5060EAGLEMAXOC8GD/OBB9JdqnGO.jpg
+        Gigabyte AERO:
+            brand: Gigabyte
+            tms: 2128
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2497MHz
+            OC/boost clock: 2595MHz
+            CUDA cores: 3840
+            length: 281mm
+            width: 117mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5060aerooc8gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5060AEROOC8GD/vAhHExugmi.jpg
+        Gigabyte AORUS ELITE:
+            brand: Gigabyte
+            tms: 2170
+            ivory: x
+            ksp: x
+            fans:3
+            boost/clock: 2497MHz
+            OC/boost clock: 2722MHz
+            CUDA cores: 3840
+            length: 329mm
+            width: 128mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5060aoruse8gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5060AORUSE8GD/nCYrZoU3uJ.jpg
+        Palit WHITE:
+            brand: Palit
+            tms: 1898
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2250MHz
+            OC/boost clock: 2280MHz
+            CUDA cores: 3840
+            length: 262mm
+            width: 127mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/palit-ne75060u19p1-gb2063m
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/NE75060U19P1-GB2063M/nMlUV25YPT.jpg
+        Palit Infinity:
+            brand: Palit
+            tms: 2020
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2250MHz
+            OC/boost clock: 2280MHz
+            CUDA cores: 3840
+            length: 262mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/palit-ne75060v19p1-gb2063l
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/NE75060V19P1-GB2063L/LEQ8lXdCHO.jpg
+        PNY Dual Fan:
+            brand: PNY
+            tms: 1938
+            ivory: x
+            ksp: 1590
+            fans: 2
+            boost/clock: 2497MHz
+            OC/boost clock: 2535MHz
+            CUDA cores: 3840
+            length: 200mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x8
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/pny-vcg50608dfxpb1-o
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/387912
+            image: https://tms.co.il/image/catalog/products/VCG50608DFXPB1-O/RvheKQyAIc.jpg
+        MSI VENTUS WHITE:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 1650
+            fans: 2
+            boost/clock: 2527MHz
+            OC/boost clock: 2535MHz
+            CUDA cores: 3840
+            length: 197mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/402203
+            image: https://img.ksp.co.il/item/402203/b_1.jpg
+        MSI GAMING:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2587MHz
+            OC/boost clock: 2602MHz
+            CUDA cores: 3840
+            length: 248mm
+            width: 135mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: x
+            image: https://storage-asset.msi.com/global/picture/product/product_1744958450b2cea19d2a536b946dca79b6b9fef70a.webp
+    RTX 5060 Ti 8gb:
+        ASUS DUAL black:
+            brand: ASUS
+            tms: 2296
+            ivory: 2490
+            ksp: 1890
+            fans: 2
+            boost/clock: 2602MHz
+            OC/boost clock: 2632MHz
+            CUDA cores: 4608
+            length: 229mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0mp2-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=131649
+            ksp link: https://ksp.co.il/web/item/382318
+            image: https://tms.co.il/image/catalog/products/90YV0MP2-M0NA00/mphmbjPE3D.jpg
+        ASUS DUAL white:
+            brand: ASUS
+            tms: x
+            ivory: 2490
+            ksp: 2090
+            fans: 2
+            boost/clock: 2602MHz
+            OC/boost clock: 2632MHz
+            CUDA cores: 4608
+            length: 229mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=153961
+            ksp link: https://ksp.co.il/web/item/415814
+            image: https://www.ivory.co.il/files/catalog/org/1770546148p48Lg.webp
+        Gigabyte WINDFORCE:
+            brand: Gigabyte
+            tms: 2191
+            ivory: 2390
+            ksp: 1910
+            fans: 2
+            boost/clock: 2550MHz
+            OC/boost clock: 2587MHz
+            CUDA cores: 4608
+            length: 208mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506twf2oc8gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=138231
+            ksp link: https://ksp.co.il/web/item/390235
+            image: https://tms.co.il/image/catalog/products/N506TWF2OC8GD/XogRtFNRXG.jpg
+        Gigabyte EAGLE black:
+            brand: Gigabyte
+            tms: 2191
+            ivory: 2350
+            ksp: 1830
+            fans: 2
+            boost/clock: 2550MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 215mm
+            width: 122mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506teagleoc8gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=138237
+            ksp link: https://ksp.co.il/web/item/387926
+            image: https://tms.co.il/image/catalog/products/N506TEAGLEOC8GD/1yDHo0gbxU.jpg
+        Gigabyte EAGLE white:
+            brand: Gigabyte
+            tms: 2211
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2550MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 215mm
+            width: 122mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506teagleocice8g
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N506TEAGLEOCICE8G/wrG7N5ZzMr.jpg
+        Gigabyte EAGLE MAX:
+            brand: Gigabyte
+            tms: 2420
+            ivory: 2470
+            ksp: x
+            fans: 3
+            boost/clock: 2590MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 281mm
+            width: 115mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x8
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506teaglemaxoc8gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=142115
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N506TEAGLEMAXOC8GD/oNgdLsKbO9.jpg
+        Gigabyte AERO:
+            brand: Gigabyte
+            tms: 2275
+            ivory: 2590
+            ksp: 2130
+            fans: 3
+            boost/clock: 2600MHz
+            OC/boost clock: 2647MHz
+            CUDA cores: 4608
+            length: 281mm
+            width: 117mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506taerooc8gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=142118
+            ksp link: https://ksp.co.il/web/item/396264
+            image: https://tms.co.il/image/catalog/products/N506TAEROOC8GD/J9j3Vt1Gw0.jpg
+        Gigabyte GAMING:
+            brand: Gigabyte
+            tms: 2275
+            ivory: x
+            ksp: 2275
+            fans: 3
+            boost/clock: 2600MHz
+            OC/boost clock: 2647MHz
+            CUDA cores: 4608
+            length: 281mm
+            width: 117mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe  5.0 x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506tgamingoc8gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/390256
+        Palit Dual
+            brand: Palit
+            tms: 2275
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2370MHz
+            OC/boost clock: 2407MHz
+            CUDA cores: 4608
+            length: 262mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/palit-ne7506t019p1-gb2062d
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N506TGAMINGOC8GD/AG716Cv7Ea.jpg
+        PNY Dual Fan:
+            brand: PNY
+            tms: 2064
+            ivory: x
+            ksp: 2030
+            fans: 2
+            boost/clock: 2670MHz
+            OC/boost clock: 2692MHz
+            CUDA cores: 4608
+            length: 245mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x8
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/pny-vcg5060t8dfxpb1-o
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/390218
+            image: https://tms.co.il/image/catalog/products/VCG5060T8DFXPB1-O/6Bqhij0pi4.jpg
+        PNY EPIC-X RGB Triple Fan:
+            brand: PNY
+            tms: x
+            ivory: 2590
+            ksp: 2220
+            fans: 3
+            boost/clock: 2407MHz
+            OC/boost clock: 2692MHz
+            CUDA cores: 4608
+            length: 299mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x8
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=169918
+            ksp link: https://ksp.co.il/web/item/391180
+            image: https://www.ivory.co.il/files/catalog/org/1785760662w62Xq.webp
+        ZOTAC Twin Edge:
+            brand: ZOTAC
+            tms: x
+            ivory: 2490
+            ksp: x
+            fans: 2
+            boost/clock: 2407MHz
+            OC/boost clock: 2572MHz
+            CUDA cores: 4608
+            length: 220mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=131943
+            ksp link: x
+            image: https://www.ivory.co.il/files/catalog/org/1746354962a62Fu.webp
+        Gainward Ghost:
+            brand: Gainward
+            tms: x
+            ivory: 2420
+            ksp: x
+            fans: 2
+            boost/clock: 2407MHz
+            OC/boost clock: 2572MHz
+            CUDA cores: 4608
+            length: 262mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=156598
+            ksp link: x
+            image: https://www.ivory.co.il/files/catalog/org/1774160498a98Hh.webp
+        MSI GAMING:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 2090
+            fans: 2
+            boost/clock: 2647MHz
+            OC/boost clock: 2662MHz
+            CUDA cores: 4608
+            length: 247mm
+            width: 135mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/390293
+            image: https://img.ksp.co.il/item/390293/b_1.jpg
+        MSI SHADOW 2X:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 1960
+            fans: 2
+            boost/clock: 2602MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 226mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/416487
+            image: https://img.ksp.co.il/item/416487/b_1.jpg
+        MSI VENTUS 3X:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 2040
+            fans: 3
+            boost/clock: 2602MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 304mm
+            width: 121mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/479315
+            image: https://img.ksp.co.il/item/479315/b_1.jpg
+        MSI VENTUS 2X black:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 2040
+            fans: 2
+            boost/clock: 2472MHz
+            OC/boost clock: 2587MHz
+            CUDA cores: 4608
+            length: 227mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/474469
+            image: https://img.ksp.co.il/item/474469/b_1.jpg
+        MSI VENTUS 2X white:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 2040
+            fans: 2
+            boost/clock: 2472MHz
+            OC/boost clock: 2587MHz
+            CUDA cores: 4608
+            length: 227mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/479292
+    RTX 5060 Ti 16gb:
+            image: https://img.ksp.co.il/item/479292/b_1.jpg
+        ASUS DUAL black:
+            brand: ASUS
+            tms: 3253
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2602MHz
+            OC/boost clock: 2632MHz
+            CUDA cores: 4608
+            length: 229mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0mh0-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0MH0-M0NA00/LEfMTAMAUk.jpg
+        ASUS DUAL white:
+            brand: ASUS
+            tms: 3211
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2602MHz
+            OC/boost clock: 2632MHz
+            CUDA cores: 4608
+            length: 229mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0mh6-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0MH6-M0NA00/Pz9a0vG9kV.jpg
+        ASUS PRIME:
+            brand: ASUS
+            tms: 3317
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2610MHz
+            OC/boost clock: 2647MHz
+            CUDA cores: 4608
+            length: 304mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0mh2-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0MH2-M0NA00/Aublhkkau3.jpg
+        Gigabyte EAGLE black:
+            brand: Gigabyte
+            tms: 3275
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2550MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 215mm
+            width: 122mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506teagleoc16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N506TEAGLEOC16GD/ZWcvq6TH3Q.jpg
+        Gigabyte EAGLE white:
+            brand: Gigabyte
+            tms: x
+            ivory: x
+            ksp: 3560
+            fans: 2
+            boost/clock: 2550MHz
+            OC/boost clock: 2617MHz
+            CUDA cores: 4608
+            length: 215mm
+            width: 122mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/448160
+            image: https://img.ksp.co.il/item/448160/b_1.jpg
+        Gigabyte AERO:
+            brand: Gigabyte
+            tms: 3317
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2600MHz
+            OC/boost clock: 2647MHz
+            CUDA cores: 4608
+            length: 281mm
+            width: 117mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n506taerooc16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N506TAEROOC16GD/7FDXvtehmd.jpg
+        Gigabyte EAGLE MAX:
+            brand: Gigabyte
+            tms: x
+            ivory: x
+            ksp: 3660
+            fans: 3
+            boost/clock: 2497MHz
+            OC/boost clock: 2550MHz
+            CUDA cores: 3840
+            length: 281mm
+            width: 115mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen:DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/491366
+            image: https://img.ksp.co.il/item/491366/b_1.jpg
+        Gigabyte WINDFORCE:
+            brand: Gigabyte
+            tms: x
+            ivory: x
+            ksp: 3690
+            fans: 2
+            boost/clock: 2550MHz
+            OC/boost clock: 2587MHz
+            CUDA cores: 4608
+            length: 208mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x8 pin
+            vram: 16gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/491364
+    RTX 5070:
+            image: https://img.ksp.co.il/item/491364/b_1.jpg
+        ASUS Dual:
+            brand: ASUS
+            tms: 3572
+            ivory: 3550
+            ksp: x
+            fans: 2
+            boost/clock: 2542MHz
+            OC/boost clock: 2572MHz
+            CUDA cores: 6144
+            length: 249mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0m17-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=142517
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0M17-M0NA00/CkM0iOOYVu.jpg
+        ASUS PRIME black:
+            brand: ASUS
+            tms: 3572
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2530MHz
+            OC/boost clock: 2557MHz
+            CUDA cores: 6144
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0m10-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0M10-M0NA00/DAaIxSBGIh.jpg
+        ASUS PRIME white:
+            brand: ASUS
+            tms: 3572
+            ivory: 3790
+            ksp: x
+            fans: 3
+            boost/clock: 2530MHz
+            OC/boost clock: 2557MHz
+            CUDA cores: 6144
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0m19-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=153964
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0M19-M0NA00/3UZReW3Mq5.jpg
+        ASUS TUF GAMING:
+            brand: ASUS
+            tms: 3623
+            ivory: x
+            ksp: 4250
+            fans: 3
+            boost/clock: 2600MHz
+            OC/boost clock: 2640MHz
+            CUDA cores: 6144
+            length: 329mm
+            width: 140mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0lz0-m0na00
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/372113
+            image: https://tms.co.il/image/catalog/products/90YV0LZ0-M0NA00/yVf5TnmRys.jpg
+        Gigabyte INFINITY:
+            brand: Gigabyte
+            tms: 4030
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2690MHz
+            OC/boost clock: 2715MHz
+            CUDA cores: 6144
+            length: 309mm
+            width:132mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5070aorusif12gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5070AORUSIF12GD/bANlrmBpqj.jpg
+        Gigabyte EAGLE black:
+            brand: Gigabyte
+            tms: 3657
+            ivory: 3650
+            ksp: x
+            fans: 3
+            boost/clock: 2550MHz
+            OC/boost clock: 2587MHz
+            CUDA cores: 6144
+            length: 290mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070-gv-n5070eagle-oc-12gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=131013
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5070EAGLEOC12GD/WNXprCJok0.jpg
+        Gigabyte EAGLE white:
+            brand: Gigabyte
+            tms: 3657
+            ivory: x
+            ksp: 3750
+            fans: 3
+            boost/clock: 2550MHz
+            OC/boost clock: 2587MHz
+            CUDA cores: 6144
+            length: 290mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070-gv-n5070eagleoc-ice-12gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/378814
+            image: https://tms.co.il/image/catalog/products/N5070EAGLEOCICE12GD/6ahkT0pBhi.jpg
+        Gigabyte WINDFORCE:
+            brand: Gigabyte
+            tms: 3572
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2512MHz
+            OC/boost clock: 2542MHz
+            CUDA cores: 6144
+            length: 282mm
+            width: 110mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 8gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5070wf3oc12gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5070WF3OC12GD/SAUlcOq55c.jpg
+        Gigabyte AORUS MASTER:
+            brand: Gigabyte
+            tms: 3965
+            ivory: 3950
+            ksp: x
+            fans: 3
+            boost/clock: 2690MHz
+            OC/boost clock: 2715MHz
+            CUDA cores: 6144
+            length: 317mm
+            width: 136mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070-gv-n5070aorus-m-12gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=131955
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5070AORUSM12GD/DKCovCthYO.jpg
+        Gigabyte AERO:
+            brand: Gigabyte
+            tms: 3798
+            ivory: x
+            ksp: 3795
+            fans: 3
+            boost/clock: 2600MHz
+            OC/boost clock: 2625MHz
+            CUDA cores: 6144
+            length: 324mm
+            width: 130mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070-gv-n5070aero-oc-12gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/398486
+            image: https://tms.co.il/image/catalog/products/N5070AEROOC12GD/NfdKDFOJCC.jpg
+        Gigabyte GAMING:
+            brand: Gigabyte
+            tms: 3721
+            ivory: 3790
+            ksp: x
+            fans: 3
+            boost/clock: 2600MHz
+            OC/boost clock: 2625MHz
+            CUDA cores: 6144
+            length: 327mm
+            width: 132mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070-gv-n5070gaming-oc-12gd
+            ivory link: https://www.ivory.co.il/catalog.php?id=128949
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5070GAMINGOC12GD/vGas4MstMC.jpg
+        Palit INFINITY:
+            brand: Palit
+            tms: 3423
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2300MHz
+            OC/boost clock: 2325MHz
+            CUDA cores: 6144
+            length: 292mm
+            width: 117mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/palit-ne75070s19k9-gb2050s
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/NE75070S19K9-GB2050S/jV3O2RgjVy.jpg
+        Palit GamingPro-S:
+            brand: Palit
+            tms: 3402
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2300MHz
+            OC/boost clock: 2325MHz
+            CUDA cores: 6144
+            length: 332mm
+            width: 127mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/palit-ne75070019k9-gb2050u
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/NE75070019K9-GB2050U/AOH0lmEBG2.jpg
+        Palit White:
+            brand: Palit
+            tms: 3402
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2300MHz
+            OC/boost clock: 2325MHz
+            CUDA cores: 6144
+            length: 292mm
+            width: 117mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/palit-ne75070u19k9-gb2050w
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/NE75070U19K9-GB2050W/GFbBT6dz8f.jpg
+        PNY Triple Fan:
+            brand: PNY
+            tms: x
+            ivory: 3690
+            ksp: 3490
+            fans: 3
+            boost/clock: 2160MHz
+            OC/boost clock: 2510MHz
+            CUDA cores: 6144
+            length: 300mm
+            width: 120mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=130830
+            ksp link: https://ksp.co.il/web/item/384788
+            image: https://www.ivory.co.il/files/catalog/org/1744095434r34My.webp
+        MSI VENTUS 2X:
+            brand: MSI
+            tms: x
+            ivory: x
+            ksp: 3440
+            fans: 2
+            boost/clock: 2542mm
+            OC/boost clock: 2557mm
+            CUDA cores: 6144
+            length: 236mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 128 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/380096
+            image: https://img.ksp.co.il/item/380096/b_1.jpg
+        MSI SHADOW 2X:
+            brand: MSI
+            tms: x
+            ivory: 3590
+            ksp: x
+            fans: 2
+            boost/clock: 2542MHz
+            OC/boost clock: 2557MHz
+            CUDA cores: 6144
+            length: 231mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=135057
+            ksp link: x
+            image: https://www.ivory.co.il/files/catalog/org/1750325508t08Px.webp
+        Gainward Python III:
+            brand: Gainward
+            tms: x
+            ivory: 3490
+            ksp: x
+            fans: 3
+            boost/clock: 2512MHz
+            OC/boost clock: 2542MHz
+            CUDA cores: 6144
+            length: 292mm
+            width: 216mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 12gb
+            memory bus: 192 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=159646
+            ksp link: x
+            image: https://www.ivory.co.il/files/catalog/org/1774750878u78XN.webp
+    RTX 5070 Ti:            
+        ASUS TUF Gaming white:
+            brand: ASUS
+            tms: 5954
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2588MHz
+            OC/boost clock: 2610MHz
+            CUDA cores: 8960
+            length: 329mm
+            width: 140mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0n60-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0N60-M0NA00/7Dt2SulqrT.jpg
+        ASUS PRIME black:
+            brand: ASUS
+            tms: 5401
+            ivory: 5690
+            ksp: x
+            fans: 3
+            boost/clock: 2500MHz
+            OC/boost clock: 2527MHz
+            CUDA cores:8960
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0mf0-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=126420
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0MF0-M0NA00/4s5XdX5gix.jpg
+        Gigabyte INFINITY:
+            brand: Gigabyte
+            tms: 6196
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2640MHz
+            OC/boost clock: 2670MHz
+            CUDA cores: 8960
+            length: 330mm
+            width: 145
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n507taorusif16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N507TAORUSIF16GD/cWC43RrlFK.jpg
+        Gigabyte WINDFORCE:
+            brand: Gigabyte
+            tms: 5358
+            ivory: x
+            ksp: 5450
+            fans: 3
+            boost/clock: 2452MHz
+            OC/boost clock: 2497MHz
+            CUDA cores: 8960
+            length: 261mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n507twf3ocv216gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/491307
+            image: https://tms.co.il/image/catalog/products/N507TWF3OCV216GD/OK9UUu7cph.jpg
+        Gigabyte AORUS MASTER:
+            brand: Gigabyte
+            tms: 5826
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2640MHz
+            OC/boost clock: 2670MHz
+            CUDA cores: 8960
+            length: 360mm
+            width: 150mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070ti-gv-n507taorus-m-16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N507TAORUSM16GD/Rla0Q4LckV.jpg
+        Gigabyte AERO:
+            brand: Gigabyte
+            tms: 5826
+            ivory: x
+            ksp: 5250
+            fans: 3
+            boost/clock: 2550MHz
+            OC/boost clock: 2588MHz
+            CUDA cores: 8960
+            length: 340mm
+            width: 140mm
+            slots: 3
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070ti-gv-n507taero-oc-16gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/382972
+            image: https://tms.co.il/image/catalog/products/N507TAEROOC16GD/686zY1e8fV.jpg
+        Gigabyte GAMING:
+            brand: Gigabyte
+            tms: 5529
+            ivory: x
+            ksp: 5390
+            fans: 3
+            boost/clock: 2550MHz
+            OC/boost clock: 2588MHz
+            CUDA cores: 8960
+            length: 340mm
+            width: 140mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070ti-gv-n507tgaming-oc-16gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/390623
+            image: https://tms.co.il/image/catalog/products/N507TGAMINGOC16GD/MFe2EFfVT7.jpg
+        Gigabyte EAGLE black:
+            brand: Gigabyte
+            tms: 5538
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2452MHz
+            OC/boost clock: 2542MHz
+            CUDA cores: 8960
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070ti-gv-n507teagle-oc-16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N507TEAGLEOC16GD/39L2jz4heS.jpg
+        Gigabyte EAGLE white:
+            brand: Gigabyte
+            tms: 5538
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2452MHz
+            OC/boost clock: 2542MHz
+            CUDA cores: 8960
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5070ti-gv-n507teagleoc-ice-16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N507TEAGLEOCICE16GD/sf8zTMQJK6.jpg
+        Palit GamingPro:
+            brand: Palit
+            tms: 4929
+            ivory: x
+            ksp: x
+            fans: 3 
+            boost/clock: 2260MHz
+            OC/boost clock: 2295MHz
+            CUDA cores: 8960
+            length: 332mm
+            width: 127mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/palit-ne7507t019t2-gb2031u
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/NE7507T019T2-GB2031U/OK8OHKHFic.jpg
+        PNY Triple Fan:
+            brand: PNY
+            tms: x 
+            ivory: x
+            ksp: 5250
+            fans: 3
+            boost/clock: 2250MHz
+            OC/boost clock: 2300MHz
+            CUDA cores: 8960
+            length: 300mm
+            width: 120mm
+            slots: 3
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/397070
+            image: https://img.ksp.co.il/item/397070/b_1.jpg
+        PNY ARGB EPIC-X Triple Fan:
+            brand: PNY
+            tms: x
+            ivory: 5690
+            ksp: x
+            fans: 3
+            boost/clock: 2295MHz
+            OC/boost clock: 2640MHz
+            CUDA cores: 8690
+            length: 300mm
+            width: 120mm
+            slots: 3
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=169912
+            ksp link: x
+            image: https://www.ivory.co.il/files/catalog/org/1785663425z25Zq.webp
+        Gainward Pheonix-S GS:
+            brand: Gainward
+            tms: x
+            ivory: 5350
+            ksp: x
+            fans: 3
+            boost/clock: 2450MHz
+            OC/boost clock: 2482MHz
+            CUDA cores: 8960
+            length: 332mm
+            width: 127mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: x
+            ivory link: https://www.ivory.co.il/catalog.php?id=140384
+            ksp link: x
+            image: https://www.ivory.co.il/files/catalog/org/1755780418w18ND.webp
+    RTX 5080:           
+        ASUS PRIME EVO:
+            tms: 6530
+            ivory: 6890
+            ksp: 6290
+            fans: 3
+            boost/clock: 2650MHz
+            OC/boost clock: 2685MHz
+            CUDA cores: 10752
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0lx4-m0na00
+            ivory link: https://www.ivory.co.il/catalog.php?id=126414
+            ksp link: https://ksp.co.il/web/item/361556
+            image: https://tms.co.il/image/catalog/products/90YV0LX4-M0NA00/MUNBmc64Xi.jpg
+        ASUS ROG Astral:
+            tms: 8803
+            ivory: x
+            ksp: 8820
+            fans: 3
+            boost/clock:2700MHz
+            OC/boost clock: 2790MHz
+            CUDA cores: 10752
+            length: 358mm
+            width: 150mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0lv0-m0na00
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/361533
+            image: https://tms.co.il/image/catalog/products/90YV0LV0-M0NA00/sXWKJW7pR5.jpg
+        ASUS TUF Gaming:
+            tms: 6932
+            ivory: x
+            ksp: x
+            fans: 3
+            boost/clock: 2700MHz
+            OC/boost clock: 2370MHz
+            CUDA cores: 10752
+            length: 348mm
+            width: 146mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/asus-90yv0m30-m0na00
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/90YV0M30-M0NA00/3v4mZnZ5yr.jpg
+        Gigabyte INFINITY:
+            tms: 7886
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2600MHz
+            OC/boost clock: 2805MHz
+            CUDA cores: 10752
+            length: 330mm
+            width: 145mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface:
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5080aorusif16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5080AORUSIF16GD/P9vzIoXotG.jpg
+        Gigabyte INFINITY WOOD:
+            tms: 8233
+            ivory: x
+            ksp: x
+            fans: 2
+            boost/clock: 2600MHz
+            OC/boost clock: 2805MHz
+            CUDA cores: 10752
+            length: 330mm
+            width: 145mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: yes
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-n5080aorusifwd16gd
+            ivory link: x
+            ksp link: x
+            image: https://tms.co.il/image/catalog/products/N5080AORUSIFWD16GD/bHxvgSrSjj.jpg
+        Gigabyte WINDFORCE:
+            tms: 6740
+            ivory:
+            ksp:
+            fans:
+            boost/clock: 2617MHz
+            OC/boost clock: 2670MHz
+            CUDA cores: 10752
+            length: 304mm
+            width: 126mm
+            slots: 2
+            ports: 1xHDMI2.1b, 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power:
+            vram:
+            memory bus:
+            memory gen:
+            rgb:
+            upscaling:
+            frame gen:
+            color: black
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5080-gv-n5080wf3oc-16gd
+            ivory link:
+            ksp link:
+
+
