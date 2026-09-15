@@ -1,9 +1,9 @@
 GPUS:
-    Nvidia RTX 5060:
+    Nvidia GeForce RTX 5060:
         ASUS DUAL black:
             brand: ASUS
             tms: 1940
-            ivory: 1950
+            ivory: 1652
             ksp: 1690
             fans: 2
             boost/clock: 2535MHz
@@ -29,7 +29,7 @@ GPUS:
         ASUS DUAL white:
             brand: ASUS
             tms: 2146
-            ivory: 1990
+            ivory: 1686
             ksp: 1599
             fans: 2
             boost/clock: 2535MHz
@@ -364,11 +364,11 @@ GPUS:
             ivory link: x
             ksp link: x
             image: https://storage-asset.msi.com/global/picture/product/product_1744958450b2cea19d2a536b946dca79b6b9fef70a.webp
-    RTX 5060 Ti 8gb:
+    Nvidia GeForce RTX 5060 Ti 8gb:
         ASUS DUAL black:
             brand: ASUS
             tms: 2296
-            ivory: 2490
+            ivory: 2110
             ksp: 1890
             fans: 2
             boost/clock: 2602MHz
@@ -394,7 +394,7 @@ GPUS:
         ASUS DUAL white:
             brand: ASUS
             tms: x
-            ivory: 2490
+            ivory: 2110
             ksp: 2090
             fans: 2
             boost/clock: 2602MHz
@@ -420,7 +420,7 @@ GPUS:
         Gigabyte WINDFORCE:
             brand: Gigabyte
             tms: 2191
-            ivory: 2390
+            ivory: 2025
             ksp: 1910
             fans: 2
             boost/clock: 2550MHz
@@ -446,7 +446,7 @@ GPUS:
         Gigabyte EAGLE black:
             brand: Gigabyte
             tms: 2191
-            ivory: 2350
+            ivory: 1991
             ksp: 1830
             fans: 2
             boost/clock: 2550MHz
@@ -498,7 +498,7 @@ GPUS:
         Gigabyte EAGLE MAX:
             brand: Gigabyte
             tms: 2420
-            ivory: 2470
+            ivory: 2093
             ksp: x
             fans: 3
             boost/clock: 2590MHz
@@ -524,7 +524,7 @@ GPUS:
         Gigabyte AERO:
             brand: Gigabyte
             tms: 2275
-            ivory: 2590
+            ivory: 2194
             ksp: 2130
             fans: 3
             boost/clock: 2600MHz
@@ -627,7 +627,7 @@ GPUS:
         PNY EPIC-X RGB Triple Fan:
             brand: PNY
             tms: x
-            ivory: 2590
+            ivory: 2194
             ksp: 2220
             fans: 3
             boost/clock: 2407MHz
@@ -653,7 +653,7 @@ GPUS:
         ZOTAC Twin Edge:
             brand: ZOTAC
             tms: x
-            ivory: 2490
+            ivory: 2110
             ksp: x
             fans: 2
             boost/clock: 2407MHz
@@ -679,7 +679,7 @@ GPUS:
         Gainward Ghost:
             brand: Gainward
             tms: x
-            ivory: 2420
+            ivory: 2050
             ksp: x
             fans: 2
             boost/clock: 2407MHz
@@ -831,7 +831,7 @@ GPUS:
             tms link: x
             ivory link: x
             ksp link: https://ksp.co.il/web/item/479292
-    RTX 5060 Ti 16gb:
+    Nvidia GeForce RTX 5060 Ti 16gb:
             image: https://img.ksp.co.il/item/479292/b_1.jpg
         ASUS DUAL black:
             brand: ASUS
@@ -1040,12 +1040,12 @@ GPUS:
             tms link: x
             ivory link: x
             ksp link: https://ksp.co.il/web/item/491364
-    RTX 5070:
+    Nvidia GeForce RTX 5070:
             image: https://img.ksp.co.il/item/491364/b_1.jpg
         ASUS Dual:
             brand: ASUS
             tms: 3572
-            ivory: 3550
+            ivory: 3008
             ksp: x
             fans: 2
             boost/clock: 2542MHz
@@ -1097,7 +1097,7 @@ GPUS:
         ASUS PRIME white:
             brand: ASUS
             tms: 3572
-            ivory: 3790
+            ivory: 3211
             ksp: x
             fans: 3
             boost/clock: 2530MHz
@@ -1175,7 +1175,7 @@ GPUS:
         Gigabyte EAGLE black:
             brand: Gigabyte
             tms: 3657
-            ivory: 3650
+            ivory: 3093
             ksp: x
             fans: 3
             boost/clock: 2550MHz
@@ -1253,7 +1253,7 @@ GPUS:
         Gigabyte AORUS MASTER:
             brand: Gigabyte
             tms: 3965
-            ivory: 3950
+            ivory: 3347
             ksp: x
             fans: 3
             boost/clock: 2690MHz
@@ -1305,7 +1305,7 @@ GPUS:
         Gigabyte GAMING:
             brand: Gigabyte
             tms: 3721
-            ivory: 3790
+            ivory: 3211
             ksp: x
             fans: 3
             boost/clock: 2600MHz
@@ -1409,7 +1409,7 @@ GPUS:
         PNY Triple Fan:
             brand: PNY
             tms: x
-            ivory: 3690
+            ivory: 3127
             ksp: 3490
             fans: 3
             boost/clock: 2160MHz
@@ -1461,7 +1461,7 @@ GPUS:
         MSI SHADOW 2X:
             brand: MSI
             tms: x
-            ivory: 3590
+            ivory: 3042
             ksp: x
             fans: 2
             boost/clock: 2542MHz
@@ -1487,7 +1487,7 @@ GPUS:
         Gainward Python III:
             brand: Gainward
             tms: x
-            ivory: 3490
+            ivory: 2957
             ksp: x
             fans: 3
             boost/clock: 2512MHz
@@ -1510,7 +1510,7 @@ GPUS:
             ivory link: https://www.ivory.co.il/catalog.php?id=159646
             ksp link: x
             image: https://www.ivory.co.il/files/catalog/org/1774750878u78XN.webp
-    RTX 5070 Ti:            
+    Nvidia GeForce RTX 5070 Ti:
         ASUS TUF Gaming white:
             brand: ASUS
             tms: 5954
@@ -1540,7 +1540,7 @@ GPUS:
         ASUS PRIME black:
             brand: ASUS
             tms: 5401
-            ivory: 5690
+            ivory: 4822
             ksp: x
             fans: 3
             boost/clock: 2500MHz
@@ -1800,7 +1800,7 @@ GPUS:
         PNY ARGB EPIC-X Triple Fan:
             brand: PNY
             tms: x
-            ivory: 5690
+            ivory: 4822
             ksp: x
             fans: 3
             boost/clock: 2295MHz
@@ -1826,7 +1826,7 @@ GPUS:
         Gainward Pheonix-S GS:
             brand: Gainward
             tms: x
-            ivory: 5350
+            ivory: 4533
             ksp: x
             fans: 3
             boost/clock: 2450MHz
@@ -1849,10 +1849,10 @@ GPUS:
             ivory link: https://www.ivory.co.il/catalog.php?id=140384
             ksp link: x
             image: https://www.ivory.co.il/files/catalog/org/1755780418w18ND.webp
-    RTX 5080:           
+    Nvidia GeForce RTX 5080:
         ASUS PRIME EVO:
             tms: 6530
-            ivory: 6890
+            ivory: 5838
             ksp: 6290
             fans: 3
             boost/clock: 2650MHz
@@ -1937,7 +1937,7 @@ GPUS:
             width: 145mm
             slots: 2
             ports: 1xHDMI2.1b, 3xDisplayport2.1b
-            interface:
+            interface: PCIe 5.0x16
             external power: 1x16 pin
             vram: 16gb
             memory bus: 256 bit
@@ -1977,9 +1977,9 @@ GPUS:
             image: https://tms.co.il/image/catalog/products/N5080AORUSIFWD16GD/bHxvgSrSjj.jpg
         Gigabyte WINDFORCE:
             tms: 6740
-            ivory:
-            ksp:
-            fans:
+            ivory: 5711
+            ksp: x
+            fans: 3
             boost/clock: 2617MHz
             OC/boost clock: 2670MHz
             CUDA cores: 10752
@@ -1988,16 +1988,43 @@ GPUS:
             slots: 2
             ports: 1xHDMI2.1b, 3xDisplayport2.1b
             interface: PCIe 5.0x16
-            external power:
-            vram:
-            memory bus:
-            memory gen:
-            rgb:
-            upscaling:
-            frame gen:
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
             color: black
             tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5080-gv-n5080wf3oc-16gd
-            ivory link:
-            ksp link:
+            ivory link: https://www.ivory.co.il/catalog.php?id=129633
+            ksp link: https://ksp.co.il/web/item/382943?srsltid=AU7gw4Xmk0EXMdiUfxYYYsBOYX7cK2J62wF1cPjoXlSx5x6_36G6GLEq
+            image: https://tms.co.il/image/catalog/products/N5080WF3OC16GD/SXUMPtIY3p.jpg
+        Gigabyte AERO:
+            tms: 7204
+            ivory: x
+            ksp: 6890
+            fans: 3
+            boost/clock: 2617MHz
+            OC/boost clock: 2370MHz
+            CUDA cores: 10752
+            length: 126mm
+            width: 304mm
+            slots: 2
+            ports: 1xHDMI2.1b 3xDisplayport2.1b
+            interface: PCIe 5.0x16
+            external power: 1x16 pin
+            vram: 16gb
+            memory bus: 256 bit
+            memory gen: GDDR7
+            rgb: no
+            upscaling: DLSS 5
+            frame gen: DLSS 5
+            color: white
+            tms link: https://tms.co.il/nvidia-cards/gigabyte-rtx-5080-gv-n5080aero-oc-16gd
+            ivory link: x
+            ksp link: https://ksp.co.il/web/item/378830
+            image: https://tms.co.il/image/catalog/products/N5080AEROOC16GD/ZYC4sj0Dqz.jpg
+
 
 
